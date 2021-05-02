@@ -11,7 +11,7 @@ public class Card {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Basic
+    @Column(name = "card_number")
     private int cardNumber;
     @Basic
     private int code;
